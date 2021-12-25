@@ -5,5 +5,8 @@
         "231A",
         "1A",
         "158A"
-    ]
+    ],
+    "files.associations": {
+        "iostream": "cpp"
+    }
 }
