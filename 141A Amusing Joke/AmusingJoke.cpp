@@ -3,9 +3,9 @@ using namespace std;
 
 int main()
 {
-    string s1,s2,s3;
-    cin>>s1>>s2>>s3;
-    map<char,int> m;
+    string s1, s2, s3;
+    cin >> s1 >> s2 >> s3;
+    map<char, int> m;
     for (size_t i = 0; i < s1.length(); i++)
     {
         m[s1[i]]++;
@@ -18,12 +18,14 @@ int main()
     {
         m[s3[i]]--;
     }
-    for(map<char,int>::iterator it = m.begin();it!=m.end();it++){
-        if(it->second!=0) {
-            cout<<"NO";
+    for (map<char, int>::iterator it = m.begin(); it != m.end(); it++)
+    {
+        if (it->second != 0)
+        {
+            cout << "NO";
             return 0;
         }
     }
-    cout<<"YES";
+    cout << "YES";
     return 0;
 }
