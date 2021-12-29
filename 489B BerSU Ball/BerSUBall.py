@@ -1,19 +1,9 @@
 def main():
-    n = int(input())
-    an = [int(x) for x in input().split()]
-    m = int(input())
-    am = [int(x) for x in input().split()]
+    s = int(input())
+    sn = [int(x) for x in input().split()]
+    l = int(input())
+    ln = [int(x) for x in input().split()]
 
-    if(n < m):
-        s = n
-        sn = an
-        l = m
-        ln = am
-    else:
-        s = m
-        sn = am
-        l = n
-        ln = an
     sn.sort()
     ln.sort()
     ans = 0
@@ -21,14 +11,15 @@ def main():
     i = 0
     while i < s and j < l:
         if ln[j] - sn[i] > 1:
-            i+=1
+            i += 1
         elif sn[i] - ln[j] > 1:
-            j+=1
+            j += 1
         else:
-            ans+=1
-            i+=1
-            j+=1
+            ans += 1
+            i += 1
+            j += 1
     print(ans)
+
 
 if __name__ == "__main__":
     main()
