@@ -6,7 +6,7 @@ def main():
         two = 1
         while w % 2 == 0:
             w /= 2
-            two *=2
+            two *= 2
         while h % 2 == 0:
             h /= 2
             two *= 2
