@@ -3,8 +3,13 @@ def main():
     while(t > 0):
         t -= 1
         n, m = [int(x) for x in input().split()]
-        if n % 2 == 0 and m % 2 == 0:
-            print(m/(n/2))
+
+        if n == 1:
+            print(0)
+        elif n == 2:
+            print(m)
+        else:
+            print(2*m)
 
 
 if __name__ == "__main__":
