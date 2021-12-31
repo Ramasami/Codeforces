@@ -2,7 +2,7 @@
 
 |Name|Java|C++|Python|
 |:---:|:---:|:---:|:---:|
-|Static Array|int[*n*]|int[*n*]|[]**n*|
+|Static Array|int[*n*]|int[*n*]|[0]**n*|
 |Dynamic Array|ArrayList<Integer>|vector<int>|list()|
 |Singlely Linked List|LinkedList<Integer>|forward_list<int>|dequeue (from collections)|
 |Doubly Linked List|LinkedList<Integer> - linked list<br />ArrayDequeue<int> - amortised list|list<int> - linked list<br />dequeue<int> - amortised list|dequeue (from collections)|
